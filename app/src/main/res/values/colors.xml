@@ -7,4 +7,8 @@
     <color name="success_color">#00BE9E</color>
     <color name="error_color">#FF6E6E</color>
     <color name="warning_color">#FFA741</color>
+    <color name="border_color">#BCC1CD</color>
+    <color name="text_hint_color">#8C9296</color>
+    <color name="button_disable_color">#B8B8B8</color>
+    <color name="button_enable_color">#25408F</color>
 </resources>
