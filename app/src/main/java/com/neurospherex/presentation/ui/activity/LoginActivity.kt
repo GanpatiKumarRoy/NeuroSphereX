@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.neurospherex.R
 import com.neurospherex.databinding.ActivityLoginBinding
 import com.neurospherex.utils.extensions.initiateStatusBar
+import com.neurospherex.utils.extensions.showToast
 import com.neurospherex.utils.extensions.startScreen
 
 class LoginActivity : AppCompatActivity() {
@@ -19,6 +20,8 @@ class LoginActivity : AppCompatActivity() {
 
         initiateStatusBar()
 
-        activityLoginBinding.submitButton.setOnClickListener { startScreen(HomeActivity::class, clearTask = true) }
+        activityLoginBinding.submitButton.setOnClickListener {
+            startScreen(HomeActivity::class, clearTask = true)
+        }
     }
 }
