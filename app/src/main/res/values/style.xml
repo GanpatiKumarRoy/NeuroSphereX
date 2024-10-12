@@ -10,6 +10,11 @@
         <item name="colorControlActivated">@color/black_color</item>
     </style>
 
+    <style name="CustomShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
     <style name="customButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

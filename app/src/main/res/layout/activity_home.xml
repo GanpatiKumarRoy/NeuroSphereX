@@ -8,7 +8,68 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_color">
+        android:background="@color/white_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:background="@color/background_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/userProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_profile_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/empShortName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_15"
+                android:text="GR"
+                android:textColor="@color/white_color"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginEnd="@dimen/dp_5"
+                app:layout_constraintBottom_toBottomOf="@+id/userProfile"
+                app:layout_constraintEnd_toEndOf="@+id/userProfile"
+                app:layout_constraintStart_toStartOf="@+id/userProfile"
+                app:layout_constraintTop_toTopOf="@+id/userProfile" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/screenName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/course_details"
+                android:textSize="@dimen/sp_17"
+                android:layout_marginStart="@dimen/sp_15"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black_color"
+                app:layout_constraintStart_toEndOf="@id/userProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            tools:listitem="@layout/leaning_course_items" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
