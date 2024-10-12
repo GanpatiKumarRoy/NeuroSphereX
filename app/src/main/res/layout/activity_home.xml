@@ -43,7 +43,6 @@
                 app:layout_constraintStart_toStartOf="@+id/userProfile"
                 app:layout_constraintTop_toTopOf="@+id/userProfile" />
 
-
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/screenName"
                 android:layout_width="0dp"
@@ -60,6 +59,32 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/sp_20"
+            android:paddingVertical="@dimen/sp_10"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:startIconDrawable="@drawable/search_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:hint="Search Courses"
+                android:textColorHint="@color/grey_color"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/black_color"
+                android:background="@drawable/rounded_edit_text_background"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
@@ -68,7 +93,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintTop_toBottomOf="@id/searchLayout"
             tools:listitem="@layout/leaning_course_items" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
