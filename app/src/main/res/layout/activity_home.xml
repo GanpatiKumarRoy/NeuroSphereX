@@ -74,7 +74,7 @@
                 android:id="@+id/searchBar"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_60"
-                android:hint="Search Courses"
+                android:hint="@string/search_courses"
                 android:textColorHint="@color/grey_color"
                 android:textSize="21sp"
                 android:textStyle="bold"
