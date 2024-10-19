@@ -14,12 +14,18 @@
         android:theme="@style/Theme.NeuroSphereX"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.ui.activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.HelpActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.ui.activity.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.ui.activity.LoginActivity"
-            android:theme="@style/Theme.CustomSplashScreenTheme"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.CustomSplashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
