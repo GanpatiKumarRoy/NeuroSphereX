@@ -11,4 +11,6 @@
     <string name="profile">Profile</string>
     <string name="setting">Setting</string>
     <string name="logout">Logout</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
 </resources>

@@ -24,8 +24,13 @@
     <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/background_color</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
-        <item name="windowSplashScreenAnimationDuration">100</item>
+        <item name="windowSplashScreenAnimationDuration">10</item>
         <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+
+    <style name="CustomNavigationViewText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
     </style>
 
     <style name="customButton">

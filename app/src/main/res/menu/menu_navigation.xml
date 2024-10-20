@@ -7,7 +7,7 @@
     <item
         android:id="@+id/userProfile"
         android:title="@string/profile"
-        android:icon="@drawable/user_icon"/>
+        android:icon="@drawable/user_icon" />
 
     <item
         android:id="@+id/settings"
