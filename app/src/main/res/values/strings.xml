@@ -7,4 +7,8 @@
     <string name="course_name_image">Course Name Image</string>
     <string name="course_details">Course Details</string>
     <string name="search_courses">Search Courses</string>
+    <string name="menu">Menu</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
 </resources>

@@ -24,7 +24,7 @@
                 android:id="@+id/userProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/user_profile_icon"
+                android:src="@drawable/user_profile_background_icon_main"
                 android:layout_marginHorizontal="@dimen/dp_10"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -52,7 +52,7 @@
                 android:textSize="@dimen/sp_17"
                 android:layout_marginStart="@dimen/sp_15"
                 android:fontFamily="@font/roboto_bold"
-                android:textColor="@color/black_color"
+                android:textColor="@color/primary_color"
                 app:layout_constraintStart_toEndOf="@id/userProfile"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"/>
